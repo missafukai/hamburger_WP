@@ -1,0 +1,21 @@
+@use "../../foundation/global" as g;
+
+.p-article {
+    margin: g.vw(32) g.vw(22) 0 g.vw(22);
+    text-align: left;
+    @include g.mq(tab) {
+        margin: g.tabvw(39) g.tabvw(35) 0 g.tabvw(42);
+    }
+    @include g.mq(pc) {
+        margin: g.pcvw(62) g.pcvw(100) 0 g.pcvw(100);
+    }
+    &__title {
+        margin-bottom: g.vw(25);
+        @include g.mq(tab) {
+            margin-bottom: g.tabvw(20);
+        }
+        @include g.mq(pc) {
+            margin-bottom: g.pcvw(20);
+        }
+    }
+}
