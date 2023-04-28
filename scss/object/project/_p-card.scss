@@ -98,14 +98,14 @@
             display: flex;
             flex-wrap: wrap;
             justify-content: space-between;
-            align-items: center;
+            align-items: stretch;
             margin: g.tabvw(40);
         }
         @include g.mq(pc){
             display: flex;
             flex-wrap: wrap;
             justify-content: space-between;
-            align-items: center;
+            align-items: stretch;
             margin: g.pcvw(120) g.pcvw(112) g.pcvw(130) g.pcvw(112);
         }
     }
