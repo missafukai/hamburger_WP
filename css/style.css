@@ -519,19 +519,6 @@ h4 {
   transition: transform 0.3s;
 }
 
-@media screen and (min-width: 1025px) {
-  .c-flex--pc {
-    display: flex;
-    width: 100%;
-  }
-  .c-flex--pc__main {
-    width: 80.885%;
-  }
-  .c-flex--pc__side {
-    width: 19.115%;
-  }
-}
-
 .c-title {
   color: #707070;
 }
@@ -602,7 +589,7 @@ h4 {
   top: 2.1333333333vw;
   right: 2.1333333333vw;
   display: block;
-  color: #1E1E1E;
+  color: #707070;
   font-family: "Roboto";
   font-size: 5.3333333333vw;
   font-weight: 700;
@@ -612,7 +599,6 @@ h4 {
   .c-menu {
     font-size: 4.0767386091vw;
     line-height: 4.7961630695vw;
-    color: #707070;
   }
 }
 @media screen and (min-width: 1025px) {
@@ -672,6 +658,19 @@ h4 {
 }
 .c-arrow.--right {
   transform: rotate(135deg);
+}
+
+@media screen and (min-width: 1025px) {
+  .c-flex--pc {
+    display: flex;
+    width: 100%;
+  }
+  .c-flex--pc__main {
+    width: 80.885%;
+  }
+  .c-flex--pc__side {
+    width: 19.115%;
+  }
 }
 
 .p-header__title {
@@ -781,7 +780,7 @@ h4 {
   line-height: 6.4vw;
   color: #707070;
   margin-left: 4.2666666667vw;
-  padding-top: 3vw;
+  padding-top: 2.8vw;
 }
 @media screen and (min-width: 600px) {
   .p-search__submit {
@@ -921,6 +920,9 @@ h4 {
 }
 @media screen and (min-width: 600px) {
   .p-card {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
     width: 42.8057553957vw;
     margin: 0;
     padding: 1.9184652278vw;
@@ -989,6 +991,11 @@ h4 {
 }
 .p-card.--eatin {
   background-image: url("../../../img/bacon-burger.png");
+}
+@media screen and (min-width: 600px) {
+  .p-card__contents {
+    margin-top: auto;
+  }
 }
 .p-card__content {
   margin-top: 4.2666666667vw;

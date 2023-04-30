@@ -1,4 +1,4 @@
-@use "../foundation/global" as g;
+@use "../../foundation/global" as g;
 
 .c-flex--pc {
     @include g.mq(pc) {
