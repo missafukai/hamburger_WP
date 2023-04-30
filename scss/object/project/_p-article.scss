@@ -4,7 +4,7 @@
     margin: g.vw(32) g.vw(22) 0 g.vw(22);
     text-align: left;
     @include g.mq(tab) {
-        margin: g.tabvw(39) g.tabvw(35) 0 g.tabvw(42);
+        margin: g.tabvw(39) g.tabvw(35) g.tabvw(37) g.tabvw(42);
     }
     @include g.mq(pc) {
         margin: g.pcvw(62) g.pcvw(100) g.pcvw(70) g.pcvw(100);
