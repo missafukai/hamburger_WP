@@ -520,14 +520,14 @@ h4 {
 }
 
 @media screen and (min-width: 1025px) {
-  .l-flex--pc {
+  .c-flex--pc {
     display: flex;
     width: 100%;
   }
-  .l-flex--pc__main {
+  .c-flex--pc__main {
     width: 80.885%;
   }
-  .l-flex--pc__side {
+  .c-flex--pc__side {
     width: 19.115%;
   }
 }
