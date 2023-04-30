@@ -37,7 +37,7 @@
         @include g.mq(pc) {
             padding: g.pcvw(84) 0 0 g.pcvw(46);
         }
-        > ul {
+        & ul {
             margin-bottom: g.vw(60);
             @include g.mq(tab) {
                 margin-bottom: g.tabvw(48);
