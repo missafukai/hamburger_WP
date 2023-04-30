@@ -6,7 +6,6 @@
     padding: g.vw(40);
     padding-bottom: g.vw(57);
     width: 100%;
-    // height: g.vw(691);
     background-color: #000;
     background-image: url("../../../img/map_sp.png");
     background-repeat: none;
@@ -16,13 +15,11 @@
     color: #fff;
     @include g.mq(tab) {
         background-image: url("../../../img/map.png");
-        // height: g.tabvw(415);
-        padding: g.tabvw(42) g.tabvw(29) g.tabvw(5) g.tabvw(42);
+        padding: g.tabvw(42) g.tabvw(29) g.tabvw(40) g.tabvw(42);
         margin-top: 0;
     }
     @include g.mq(pc) {
         background-image: url("../../../img/map.png");
-        // height: g.pcvw(649);
         padding: g.pcvw(86) g.pcvw(737) g.pcvw(60) g.pcvw(119);
         margin-top: 0;
     }

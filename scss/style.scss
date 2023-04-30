@@ -16,7 +16,6 @@
 @use "layout/l-main";
 @use "layout/l-footer";
 @use "layout/l-menu";
-@use "layout/l-flex";
 
 //===========================================================
 // Object
@@ -33,6 +32,8 @@
 @use "object/component/c-icon";
 @use "object/component/c-close";
 @use "object/component/c-arrow";
+@use "object/component/c-flex";
+
 
 //-----------------------------------------------------------
 // Project

@@ -8,6 +8,9 @@
     background-position: center;
     text-align: left;
     @include g.mq(tab) {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
         width: g.tabvw(357);
         margin: 0;
         padding: g.tabvw(16);
@@ -63,6 +66,11 @@
     }
     &.--eatin {
         background-image: url("../../../img/bacon-burger.png");
+    }
+    &__contents {
+        @include g.mq(tab) {
+            margin-top: auto;
+        }
     }
     &__content {
         margin-top: g.vw(16); 
