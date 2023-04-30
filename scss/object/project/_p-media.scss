@@ -7,7 +7,7 @@
     @include g.mq(tab) {
         display: flex;
         align-items: stretch;
-        margin: g.tabvw(37) g.tabvw(35) g.tabvw(20) g.tabvw(42);
+        margin: g.tabvw(20) g.tabvw(35) g.tabvw(20) g.tabvw(42);
     }
     @include g.mq(pc) {
         margin: 0 g.pcvw(100) g.pcvw(30) g.pcvw(100);

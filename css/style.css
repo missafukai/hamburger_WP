@@ -1528,7 +1528,7 @@ h4 {
 }
 @media screen and (min-width: 600px) {
   .p-article {
-    margin: 4.6762589928vw 4.1966426859vw 0 5.035971223vw;
+    margin: 4.6762589928vw 4.1966426859vw 4.4364508393vw 5.035971223vw;
   }
 }
 @media screen and (min-width: 1025px) {
@@ -1559,7 +1559,7 @@ h4 {
   .p-media {
     display: flex;
     align-items: stretch;
-    margin: 4.4364508393vw 4.1966426859vw 2.3980815348vw 5.035971223vw;
+    margin: 2.3980815348vw 4.1966426859vw 2.3980815348vw 5.035971223vw;
   }
 }
 @media screen and (min-width: 1025px) {
