@@ -1013,6 +1013,7 @@ h4 {
 @media screen and (min-width: 1025px) {
   .p-card__content {
     padding: 0.7291666667vw 1.0416666667vw;
+    margin-top: 1.0416666667vw;
     font-size: 0.8333333333vw;
     line-height: 1.2375vw;
   }

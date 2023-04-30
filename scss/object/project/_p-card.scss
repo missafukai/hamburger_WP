@@ -84,6 +84,7 @@
         }
         @include g.mq(pc) {
             padding: g.pcvw(14) g.pcvw(20);
+            margin-top: g.pcvw(20);
             font-size: g.pcvw(16);
             line-height: g.pcvw(23.76);
         }
