@@ -7,7 +7,7 @@
         margin: g.tabvw(39) g.tabvw(35) 0 g.tabvw(42);
     }
     @include g.mq(pc) {
-        margin: g.pcvw(62) g.pcvw(100) 0 g.pcvw(100);
+        margin: g.pcvw(62) g.pcvw(100) g.pcvw(70) g.pcvw(100);
     }
     &__title {
         margin-bottom: g.vw(25);
