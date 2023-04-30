@@ -1403,6 +1403,16 @@ h4 {
   }
 }
 @media screen and (min-width: 600px) {
+  .p-pager__item a {
+    display: block;
+  }
+}
+@media screen and (min-width: 1025px) {
+  .p-pager__item a {
+    display: block;
+  }
+}
+@media screen and (min-width: 600px) {
   .p-pager__item.active {
     color: #fff;
     background-color: #3C2A10;

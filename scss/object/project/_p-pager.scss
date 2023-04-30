@@ -42,6 +42,14 @@
             padding-top: g.pcvw(5);
             border: g.pcvw(1) solid g.$sub_text;
         }
+        & a {
+            @include g.mq(tab) {
+                display: block;
+            }
+            @include g.mq(pc) {
+                display: block;
+            }
+        }
         &.active {
             @include g.mq(tab) {
                 color: #fff;
