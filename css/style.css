@@ -1209,16 +1209,16 @@ h4 {
     padding: 4.375vw 0 0 2.3958333333vw;
   }
 }
-.p-menu__container > ul {
+.p-menu__container ul {
   margin-bottom: 16vw;
 }
 @media screen and (min-width: 600px) {
-  .p-menu__container > ul {
+  .p-menu__container ul {
     margin-bottom: 5.7553956835vw;
   }
 }
 @media screen and (min-width: 1025px) {
-  .p-menu__container > ul {
+  .p-menu__container ul {
     margin-bottom: 2.5vw;
   }
 }
@@ -1400,6 +1400,16 @@ h4 {
     height: 1.8229166667vw;
     padding-top: 0.2604166667vw;
     border: 0.0520833333vw solid #707070;
+  }
+}
+@media screen and (min-width: 600px) {
+  .p-pager__item a {
+    display: block;
+  }
+}
+@media screen and (min-width: 1025px) {
+  .p-pager__item a {
+    display: block;
   }
 }
 @media screen and (min-width: 600px) {
