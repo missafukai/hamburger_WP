@@ -60,6 +60,14 @@
             top: g.pcvw(112);
             left: g.pcvw(280);
         }
+        &.--search {
+            @include g.mq(tab) {
+                left: g.tabvw(325);
+            }
+            @include g.mq(pc) {
+                left: g.pcvw(340);
+            }
+        }
     }
     &.--index {
         background-image: url("../../img/burger-veggie.png");

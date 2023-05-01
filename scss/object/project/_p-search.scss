@@ -59,6 +59,7 @@
     &__input {
         width: g.vw(216);
         height: 100%;
+        font-weight: 700;
         @include g.mq(tab) {
             width: g.tabvw(396);
         }
