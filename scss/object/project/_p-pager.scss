@@ -114,10 +114,9 @@
         }
     }
     &__arrow.--right {
-        display: none;
         margin-left: g.vw(10);
         @include g.mq(tab) {
-            margin-left: 0;
+            margin-left: 1vw;
         }
         @include g.mq(pc) {
             margin-left: 0;

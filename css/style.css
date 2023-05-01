@@ -762,6 +762,7 @@ h4 {
 .p-search__input {
   width: 57.6vw;
   height: 100%;
+  font-weight: 700;
 }
 @media screen and (min-width: 600px) {
   .p-search__input {
@@ -876,6 +877,16 @@ h4 {
   .p-jumbotron__subtitle {
     top: 5.8333333333vw;
     left: 14.5833333333vw;
+  }
+}
+@media screen and (min-width: 600px) {
+  .p-jumbotron__subtitle.--search {
+    left: 38.96882494vw;
+  }
+}
+@media screen and (min-width: 1025px) {
+  .p-jumbotron__subtitle.--search {
+    left: 17.7083333333vw;
   }
 }
 .p-jumbotron.--index {
@@ -1498,12 +1509,11 @@ h4 {
   }
 }
 .p-pager__arrow.--right {
-  display: none;
   margin-left: 2.6666666667vw;
 }
 @media screen and (min-width: 600px) {
   .p-pager__arrow.--right {
-    margin-left: 0;
+    margin-left: 1vw;
   }
 }
 @media screen and (min-width: 1025px) {
