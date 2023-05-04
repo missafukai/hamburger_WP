@@ -11,6 +11,7 @@
     }
     &__title {
         margin-bottom: g.vw(25);
+        color: g.$main_text;
         @include g.mq(tab) {
             margin-bottom: g.tabvw(20);
         }

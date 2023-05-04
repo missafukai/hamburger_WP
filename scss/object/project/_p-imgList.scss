@@ -1,0 +1,15 @@
+@use "../../foundation/global" as g;
+
+.p-imgList {
+    display: flex;
+    flex-direction: column;
+    margin: g.vw(30) g.vw(20);
+    &__item {
+        width: g.vw(335);
+        height: g.vw(205);
+        margin-bottom: g.vw(20);
+        > img {
+            max-width: 100%;
+        }
+    }
+}

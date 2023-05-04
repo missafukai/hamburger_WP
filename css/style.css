@@ -356,6 +356,7 @@ body {
   font-size: 4.2666666667vw;
   color: #3C2A10;
   line-height: 6.4vw;
+  text-align: left;
 }
 @media screen and (min-width: 600px) {
   body {
@@ -436,6 +437,18 @@ h4 {
   h4 {
     font-size: 1.0416666667vw;
   }
+}
+
+h5 {
+  font-weight: 700;
+  font-size: 5.3333333333vw;
+  line-height: 7.92vw;
+}
+
+h6 {
+  font-weight: 700;
+  font-size: 5.3333333333vw;
+  line-height: 7.92vw;
 }
 
 .l-header {
@@ -673,6 +686,14 @@ h4 {
   }
 }
 
+.c-list.--ordered {
+  counter-reset: count 0;
+}
+.c-list.--ordered li::before {
+  content: counter(count) ".";
+  counter-increment: count 1;
+}
+
 .p-header__title {
   margin: 10.6666666667vw auto;
 }
@@ -843,22 +864,6 @@ h4 {
     left: 3.90625vw;
   }
 }
-.p-jumbotron__title.--archive {
-  top: 28.2666666667vw;
-}
-@media screen and (min-width: 600px) {
-  .p-jumbotron__title.--archive {
-    top: 12.829736211vw;
-  }
-}
-@media screen and (min-width: 1025px) {
-  .p-jumbotron__title.--archive {
-    top: 4.2708333333vw;
-    left: 4.2708333333vw;
-    font-size: 3.125vw;
-    line-height: 3.6619791667vw;
-  }
-}
 .p-jumbotron__subtitle {
   color: #fff;
   font-weight: 700;
@@ -879,26 +884,17 @@ h4 {
     left: 14.5833333333vw;
   }
 }
-@media screen and (min-width: 600px) {
-  .p-jumbotron__subtitle.--search {
-    left: 38.96882494vw;
-  }
-}
-@media screen and (min-width: 1025px) {
-  .p-jumbotron__subtitle.--search {
-    left: 17.7083333333vw;
-  }
-}
+
 .p-jumbotron.--index {
   background-image: url("../../img/burger-veggie.png");
 }
-.p-jumbotron.--archive {
+
+.--archive.p-jumbotron {
   background-image: url("../../img/three-burgers.png");
   background-size: 375%;
   background-position: 28% 46.5%;
-  position: relative;
 }
-.p-jumbotron.--archive::after {
+.--archive.p-jumbotron::after {
   content: "";
   position: absolute;
   background-color: rgba(0, 0, 0, 0.5);
@@ -908,17 +904,55 @@ h4 {
   height: 100%;
 }
 @media screen and (min-width: 600px) {
-  .p-jumbotron.--archive {
+  .--archive.p-jumbotron {
     background-size: 165%;
     background-position: 49% 46.5%;
   }
 }
 @media screen and (min-width: 1025px) {
-  .p-jumbotron.--archive {
+  .--archive.p-jumbotron {
     height: 12.4479166667vw;
     background-size: 100%;
     background-position: 49% 47.5%;
   }
+}
+.--archive.p-jumbotron__title {
+  top: 28.2666666667vw;
+}
+@media screen and (min-width: 600px) {
+  .--archive.p-jumbotron__title {
+    top: 12.829736211vw;
+  }
+}
+@media screen and (min-width: 1025px) {
+  .--archive.p-jumbotron__title {
+    top: 4.2708333333vw;
+    left: 4.2708333333vw;
+    font-size: 3.125vw;
+    line-height: 3.6619791667vw;
+  }
+}
+
+@media screen and (min-width: 600px) {
+  .--search.p-jumbotron__subtitle {
+    left: 38.96882494vw;
+  }
+}
+@media screen and (min-width: 1025px) {
+  .--search.p-jumbotron__subtitle {
+    left: 17.7083333333vw;
+  }
+}
+
+.--single.p-jumbotron {
+  background-image: url("../../img/cheese-burger.png");
+  height: 60vw;
+  background-size: 188%;
+  background-position: 50% 45%;
+}
+.--single.p-jumbotron__title {
+  top: 24.8vw;
+  left: 6.9333333333vw;
 }
 
 .p-card {
@@ -1548,6 +1582,7 @@ h4 {
 }
 .p-article__title {
   margin-bottom: 6.6666666667vw;
+  color: #3C2A10;
 }
 @media screen and (min-width: 600px) {
   .p-article__title {
@@ -1686,6 +1721,83 @@ h4 {
   }
 }
 
+.p-article-media {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin: 8vw 5.3333333333vw;
+}
+.p-article-media__img-wrapper {
+  width: 38.4vw;
+}
+.p-article-media__img {
+  max-width: 100%;
+}
+.p-article-media__body {
+  width: 48.8vw;
+  text-align: left;
+}
+.p-article-media.--rev {
+  flex-direction: row-reverse;
+}
+
+.p-headline {
+  text-align: left;
+  margin: 8vw 5.3333333333vw;
+}
+
+.p-blockquote {
+  background-color: #F5F5F5;
+  margin: 5.3333333333vw;
+  padding: 8vw 5.3333333333vw;
+  text-align: left;
+}
+
+.p-singleImg--big {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+  height: 100%;
+  -o-object-position: 50% 77%;
+     object-position: 50% 77%;
+}
+.p-singleImg--big__wrapper {
+  margin: 8vw auto;
+  width: 89.3333333333vw;
+  height: 33.0666666667vw;
+}
+
+.p-singleImg--small {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+.p-singleImg--small__wrapper {
+  margin: 8vw auto;
+  width: 71.2vw;
+  height: 44.2666666667vw;
+}
+
+.p-imgList {
+  display: flex;
+  flex-direction: column;
+  margin: 8vw 5.3333333333vw;
+}
+.p-imgList__item {
+  width: 89.3333333333vw;
+  height: 54.6666666667vw;
+  margin-bottom: 5.3333333333vw;
+}
+.p-imgList__item > img {
+  max-width: 100%;
+}
+
+.p-list {
+  margin: 5.3333333333vw;
+  text-align: left;
+}
+
 .u-bg--grey {
   display: none;
   width: 100%;
@@ -1696,5 +1808,9 @@ h4 {
   left: 0;
   z-index: 70;
   background: rgba(0, 0, 0, 0.502);
+}
+
+.u-mb--60 {
+  margin-bottom: 16vw;
 }
 /*# sourceMappingURL=style.css.map */
