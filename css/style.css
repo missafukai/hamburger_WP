@@ -451,6 +451,12 @@ h6 {
   line-height: 7.92vw;
 }
 
+code {
+  font-size: 4.2666666667vw;
+  line-height: 6.4vw;
+  font-family: "M+ 1m", sans-serif;
+}
+
 .l-header {
   position: relative;
   width: 100%;
@@ -573,7 +579,7 @@ h6 {
 .c-button--submit {
   border: 0.2666666667vw solid #707070;
   border-radius: 2.6666666667vw;
-  background-image: linear-gradient(to right, #F2EDE9, #DED8D3);
+  background-image: linear-gradient(to bottom right, #F2EDE9, #DED8D3);
   padding: 3.2vw;
 }
 @media screen and (min-width: 600px) {
@@ -595,6 +601,11 @@ h6 {
   border: 0.2666666667vw solid #ffffff;
   border-radius: 13.3333333333vw;
   color: #707070;
+}
+.c-button--big {
+  border: 0.2666666667vw solid #707070;
+  border-radius: 5.3333333333vw;
+  background-image: linear-gradient(to bottom right, #F2EDE9, #DED8D3);
 }
 
 .c-menu {
@@ -1729,6 +1740,7 @@ h6 {
 }
 .p-article-media__img-wrapper {
   width: 38.4vw;
+  height: 23.7333333333vw;
 }
 .p-article-media__img {
   max-width: 100%;
@@ -1783,19 +1795,62 @@ h6 {
   display: flex;
   flex-direction: column;
   margin: 8vw 5.3333333333vw;
+  gap: 5.3333333333vw;
 }
 .p-imgList__item {
   width: 89.3333333333vw;
   height: 54.6666666667vw;
-  margin-bottom: 5.3333333333vw;
 }
 .p-imgList__item > img {
-  max-width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+  height: 100%;
 }
 
 .p-list {
   margin: 5.3333333333vw;
   text-align: left;
+}
+
+.p-code__wrapper {
+  background-color: #F5F5F5;
+  margin: 8vw 5.3333333333vw;
+  padding: 5.3333333333vw 13.3333333333vw;
+  text-align: left;
+}
+
+.p-table {
+  border-collapse: collapse;
+  text-align: left;
+}
+.p-table__column {
+  border: 0.2666666667vw solid #707070;
+  padding: 8vw;
+}
+.p-table__column.--1 {
+  width: 36vw;
+}
+.p-table__column.--2 {
+  width: 53.3333333333vw;
+}
+.p-table__wrapper {
+  margin: 8vw 5.3333333333vw;
+  margin-bottom: 16vw;
+}
+
+.p-button.--single {
+  display: block;
+  margin: 8vw auto;
+  width: 89.3333333333vw;
+  height: 21.6vw;
+  padding: 8vw;
+  font-weight: 700;
+}
+
+.p-strong__wrapper {
+  text-align: left;
+  margin: 8vw 5.3333333333vw;
 }
 
 .u-bg--grey {

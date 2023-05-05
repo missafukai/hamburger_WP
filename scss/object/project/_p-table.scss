@@ -1,0 +1,21 @@
+@use "../../foundation/global" as g;
+
+.p-table {
+    border-collapse: collapse;
+    text-align: left;
+    &__column {
+        border: g.vw(1) solid g.$sub_text;
+        padding: g.vw(30);
+        &.--1 {
+            width: g.vw(135);
+        }
+        &.--2 {
+            width: g.vw(200);
+        }
+    }
+    &__wrapper {
+        margin: g.vw(30) g.vw(20);
+        margin-bottom: g.vw(60);
+
+    }
+}

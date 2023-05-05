@@ -6,7 +6,8 @@
     align-items: flex-start;
     margin: g.vw(30) g.vw(20);
     &__img-wrapper {
-      width: g.vw(144);  
+      width: g.vw(144);
+      height: g.vw(89);  
     }
     &__img {
         max-width: 100%;
