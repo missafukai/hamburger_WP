@@ -32,18 +32,6 @@
             top: g.pcvw(220);
             left: g.pcvw(75);
         }
-        &.--archive {
-            top: g.vw(106);
-            @include g.mq(tab) {
-                top: g.tabvw(107);
-            }
-            @include g.mq(pc) {
-                top: g.pcvw(82);
-                left: g.pcvw(82);
-                font-size: g.pcvw(60);
-                line-height: g.pcvw(70.31);
-            }
-        }
     }
     &__subtitle {
         color: #fff;
@@ -60,40 +48,69 @@
             top: g.pcvw(112);
             left: g.pcvw(280);
         }
-        &.--search {
-            @include g.mq(tab) {
-                left: g.tabvw(325);
-            }
-            @include g.mq(pc) {
-                left: g.pcvw(340);
-            }
-        }
     }
-    &.--index {
-        background-image: url("../../img/burger-veggie.png");
+}
+
+//indexページ限定のcss
+.p-jumbotron.--index {
+    background-image: url("../../img/burger-veggie.png");
+}
+
+//archiveページ・archive-search限定のcss
+.--archive.p-jumbotron {
+    background-image: url("../../img/three-burgers.png");
+    background-size: 375%;
+    background-position: 28% 46.5%;
+    &::after {
+        content: "";
+        position: absolute;
+        background-color: rgb(0 0 0 / 0.5);
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
     }
-    &.--archive {
-        background-image: url("../../img/three-burgers.png");
-        background-size: 375%;
-        background-position: 28% 46.5%;
-        position: relative;
-        &::after {
-            content: "";
-            position: absolute;
-            background-color: rgb(0 0 0 / 0.5);
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-        }
+    @include g.mq(tab) {
+        background-size: 165%;
+        background-position: 49% 46.5%;
+    }
+    @include g.mq(pc) {
+        height: g.pcvw(239);
+        background-size: 100%;
+        background-position: 49% 47.5%;
+    }
+    &__title {
+        top: g.vw(106);
         @include g.mq(tab) {
-            background-size: 165%;
-            background-position: 49% 46.5%;
+            top: g.tabvw(107);
         }
         @include g.mq(pc) {
-            height: g.pcvw(239);
-            background-size: 100%;
-            background-position: 49% 47.5%;
+            top: g.pcvw(82);
+            left: g.pcvw(82);
+            font-size: g.pcvw(60);
+            line-height: g.pcvw(70.31);
         }
+    }
+}
+
+//archive-search限定のcss
+.--search.p-jumbotron__subtitle {
+    @include g.mq(tab) {
+        left: g.tabvw(325);
+    }
+    @include g.mq(pc) {
+        left: g.pcvw(340);
+    }
+}
+
+//singleページ限定のcss
+.--single.p-jumbotron {
+    background-image: url("../../img/cheese-burger.png");
+    height: g.vw(225);
+    background-size: 188%;
+    background-position: 50% 45%;
+    &__title {
+        top: g.vw(93);
+        left: g.vw(26);
     }
 }

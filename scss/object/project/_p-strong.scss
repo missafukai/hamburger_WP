@@ -1,0 +1,8 @@
+@use "../../foundation/global" as g;
+
+.p-strong {
+    &__wrapper {
+        text-align: left;
+        margin: g.vw(30) g.vw(20);
+    }
+}

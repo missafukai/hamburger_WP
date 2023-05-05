@@ -33,6 +33,7 @@
 @use "object/component/c-close";
 @use "object/component/c-arrow";
 @use "object/component/c-flex";
+@use "object/component/c-list";
 
 
 //-----------------------------------------------------------
@@ -50,9 +51,19 @@
 @use "object/project/p-article";
 @use "object/project/p-archive-media";
 @use "object/project/p-article-media";
+@use "object/project/p-headline";
+@use "object/project/p-blockquote";
+@use "object/project/p-singleImg";
+@use "object/project/p-imgList";
+@use "object/project/p-list";
+@use "object/project/p-code";
+@use "object/project/p-table";
+@use "object/project/p-button";
+@use "object/project/p-strong";
 
 //-----------------------------------------------------------
 // Utility
 //-----------------------------------------------------------
 
 @use "object/utility/u-bg";
+@use "object/utility/u-mb";

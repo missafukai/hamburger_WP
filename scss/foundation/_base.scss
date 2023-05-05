@@ -8,6 +8,7 @@ body {
     font-size: g.vw(16);
     color: g.$main_text;
     line-height: g.vw(24);
+    text-align: left;
     @include g.mq(tab) {
         font-size: g.tabvw(16);
         line-height: g.tabvw(24);
@@ -71,3 +72,20 @@ h4 {
     }
 }
 
+h5 {
+    font-weight: 700;
+    font-size: g.vw(20);
+    line-height: g.vw(29.7);
+}
+
+h6 {
+    font-weight: 700;
+    font-size: g.vw(20);
+    line-height: g.vw(29.7);
+}
+
+code {
+    font-size: g.vw(16);
+    line-height: g.vw(24);
+    font-family: 'M+ 1m', sans-serif;
+}

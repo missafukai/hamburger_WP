@@ -1,0 +1,10 @@
+@use "../../foundation/global" as g;
+
+.p-code {
+    &__wrapper {
+    background-color: #F5F5F5;
+    margin: g.vw(30) g.vw(20);
+    padding: g.vw(20) g.vw(50);
+    text-align: left;
+    }
+}
