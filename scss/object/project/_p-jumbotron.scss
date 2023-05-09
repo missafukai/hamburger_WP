@@ -109,8 +109,27 @@
     height: g.vw(225);
     background-size: 188%;
     background-position: 50% 45%;
+    @include g.mq(tab) {
+        background-position: 50% 65%;
+    }
+    @include g.mq(pc) {
+        height: g.pcvw(500);
+        background-size: 100%;
+    }
     &__title {
         top: g.vw(93);
         left: g.vw(26);
+        @include g.mq(tab) {
+            font-size: g.tabvw(60);
+            line-height: g.tabvw(89.1);
+            top: g.tabvw(213);
+            left: g.tabvw(80);
+        }
+        @include g.mq(pc) {
+            font-size: g.pcvw(60);
+            line-height: g.pcvw(89.1);
+            top: g.pcvw(213);
+            left: g.pcvw(70);
+        }
     }
 }

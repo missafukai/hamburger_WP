@@ -27,5 +27,16 @@
         border: g.vw(1) solid #707070;
         border-radius: g.vw(20);
         background-image: linear-gradient(to bottom right, #F2EDE9, #DED8D3);
+        @include g.mq(tab) {
+            border: g.tabvw(1) solid #707070;
+            border-radius: g.tabvw(20);
+        }
+        @include g.mq(pc) {
+            border: g.pcvw(1) solid #707070;
+            border-radius: g.pcvw(20);
+        }
+        & a {
+            display: block;
+        }
     }
 }
