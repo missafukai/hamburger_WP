@@ -3,7 +3,7 @@
 .c-title {
     color: g.$sub_text;
     &--jp {
-        font-family: 'M PLUS 1';
+        font-family: 'M+ 1m', sans-serif;
         font-weight: 700;
         font-size: g.vw(36);
         @include g.mq(tab) {

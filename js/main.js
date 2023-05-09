@@ -13,3 +13,8 @@ $(function(){
     });
 });
 
+//画面幅が変わったときにメニューをリセット
+$(window).on('resize', function() {
+    $('.l-menu').removeClass('active');
+    $('.u-bg--grey').hide();
+});

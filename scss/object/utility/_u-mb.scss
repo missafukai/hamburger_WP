@@ -2,4 +2,7 @@
 
 .u-mb--60 {
     margin-bottom: g.vw(60);
+    @include g.mq(tab) {
+        margin-bottom: g.tabvw(60);
+    }
 }

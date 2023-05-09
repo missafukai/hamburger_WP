@@ -16,7 +16,7 @@
                 <div class="c-menu" id="js-menu">
                     <button>Menu</button>
                 </div> <!-- /c-menu -->
-                <h1 class="c-title p-header__title">Hamburger</h1>
+                <a href=""><h1 class="c-title p-header__title">Hamburger</h1></a>
                 <form action="#" method="#" class="p-search">
                     <div class="p-search__wrapper">
                         <input class="c-input--search p-search__input" type="search" name="search">
@@ -29,8 +29,8 @@
                 <div class="p-jumbotron --single">
                     <h1 class="p-jumbotron__title c-title c-title--jp --single">h1 チーズバーガー</h1>
                 </div> <!-- /p-jumbotron -->
-                <article class="p-article">
-                    <h2 class="p-article__title c-title">見出しh2</h2>
+                <article class="p-article --single">
+                    <h2 class="p-article__title c-title --single">見出しh2</h2>
                     <p class="p-article__contents">Pタグテキスト。Pタグテキスト。Pタグテキスト。Pタグテキスト。Pタグテキスト。Pタグテキスト。Pタグテキスト。Pタグテキスト。Pタグテキスト。Pタグテキスト。Pタグテキスト。Pタグテキスト。Pタグテキスト。Pタグテキスト。Pタグテキスト。Pタグテキスト。Pタグテキスト。Pタグテキスト。Pタグテキスト。Pタグテキスト。Pタグテキスト。</p>
                 </article> <!-- /p-article -->
                 <h3 class="p-headline">見出しh3</h3>
@@ -39,7 +39,7 @@
                 <h6 class="p-headline">見出しh6</h6>
                 <blockquote class="p-blockquote">
                     <p>Blockquote 引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ</p>
-                    <p>出典元： ○○○○○○○○○○○○</p>
+                    <p class="p-blockquote__source">出典元： <a href="#">○○○○○○○○○○○○</a></p>
                 </blockquote> <!-- /p-blockquote -->
                 <div class="p-singleImg--big__wrapper">
                     <img class="c-img p-singleImg--big" src="img/burger-set.png" alt="サンプル画像">
@@ -52,7 +52,7 @@
                         <p class="p-article-media__text"> テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります </p>
                     </div> <!-- /p-article-media__body -->
                 </div> <!-- /p-article-media -->
-                <div class="p-article-media --rev">
+                <div class="p-article-media --rev --last">
                     <figure class="p-article-media__img-wrapper">
                         <img  class="p-article-media__img" src="img/burger-set.png" alt="サンプル画像">
                     </figure>
@@ -74,32 +74,37 @@
                     <li class="p-imgList__item"><img src="img/burger-set.png" alt=""></li>
                     <li class="p-imgList__item"><img src="img/burger-set.png" alt=""></li>
                 </ul> <!-- /p-imgList -->
-                <ol class="c-list p-list --ordered">
-                    <li >リストリストリスト</li>
-                    <li >リストリストリスト
-                        <ol class="c-list p-list --ordered">
-                            <li>リスト2リスト2リスト2</li>
-                            <li>リスト2リスト2リスト2</li>
-                        </ol>
-                    </li>
-                </ol> <!-- /p-list--ordered -->
-                <ol class="c-list p-list --ordered u-mb--60">
-                    <li>リストリストリスト</li>
-                    <li>リストリストリスト</li>
-                </ol> <!-- /p-list--ordered -->
-                <ul class="c-list p-list --unordered">
-                    <li>リストリストリスト</li>
-                    <li>リストリストリスト
-                        <ul class="c-list p-list --unordered">
-                            <li>リスト2リスト2リスト2</li>
-                            <li>リスト2リスト2リスト2</li>
-                        </ul>
-                    </li>
-                </ul> <!-- /p-list--unordered -->
-                <ul class="c-list p-list --unordered">
-                    <li>リストリストリスト</li>
-                    <li>リストリストリスト</li>
-                </ul> <!-- /p-list--unordered -->
+                <div class="p-list__wrapper">
+                    <ol class="c-list p-list --ordered">
+                        <li >リストリストリスト</li>
+                        <li >リストリストリスト
+                            <ol class="c-list p-list --ordered --nesting">
+                                <li>リスト2リスト2リスト2</li>
+                                <li>リスト2リスト2リスト2</li>
+                            </ol>
+                        </li>
+                    </ol> <!-- /p-list--ordered -->
+                    <ol class="c-list p-list --ordered u-mb--60">
+                        <li>リストリストリスト</li>
+                        <li>リストリストリスト</li>
+                    </ol> <!-- /p-list--ordered -->
+                </div>
+                <div class="p-list__wrapper">
+                    <ul class="c-list p-list --unordered">
+                        <li>リストリストリスト</li>
+                        <li>リストリストリスト
+                            <ul class="c-list p-list --unordered --nesting">
+                                <li>リスト2リスト2リスト2</li>
+                                <li>リスト2リスト2リスト2</li>
+                            </ul>
+                        </li>
+                    </ul> <!-- /p-list--unordered -->
+                    
+                    <ul class="c-list p-list --unordered">
+                        <li>リストリストリスト</li>
+                        <li>リストリストリスト</li>
+                    </ul> <!-- /p-list--unordered -->
+                </div>
                 <div class="p-code__wrapper">
                     <pre><code class="c-code p-code">
 &lt;html&gt;
@@ -134,8 +139,8 @@
                         </tr>
                     </table>
                 </div>
-                <button class="c-button--big p-button --single">ボタン</button>
-                <div class="p-strong__wrapper u-mb--60">
+                <button class="c-button--big p-button --single"><a href="">ボタン</a></button>
+                <div class="p-strong__wrapper">
                     <strong class="p-strong">boldboldboldboldboldboldbold</strong>
                 </div>
 <!-- ここから全ページ共通2 -->

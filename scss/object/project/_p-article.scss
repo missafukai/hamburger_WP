@@ -20,3 +20,21 @@
         }
     }
 }
+
+//singleページ限定のCSS
+.--single.p-article {
+    @include g.mq(tab) {
+        margin: g.tabvw(60);
+    }
+    @include g.mq(pc) {
+        margin: g.pcvw(62) g.pcvw(100) g.pcvw(70) g.pcvw(100);
+    }
+    &__title {
+        @include g.mq(tab) {
+            margin-bottom: g.tabvw(55);
+        }
+        @include g.mq(pc) {
+            margin-bottom: g.pcvw(57);
+        }
+    }
+}

@@ -66,9 +66,11 @@ h4 {
     font-size: g.vw(20);
     @include g.mq(tab) {
         font-size: g.tabvw(20);
+        line-height: g.tabvw(29.7);
     }
     @include g.mq(pc) {
         font-size: g.pcvw(20);
+        line-height: g.pcvw(29.7);
     }
 }
 
@@ -76,16 +78,40 @@ h5 {
     font-weight: 700;
     font-size: g.vw(20);
     line-height: g.vw(29.7);
+    @include g.mq(tab) {
+        font-size: g.tabvw(20);
+        line-height: g.tabvw(29.7);
+    }
+    @include g.mq(pc) {
+        font-size: g.pcvw(20);
+        line-height: g.pcvw(29.7);
+    }
 }
 
 h6 {
     font-weight: 700;
     font-size: g.vw(20);
     line-height: g.vw(29.7);
+    @include g.mq(tab) {
+        font-size: g.tabvw(20);
+        line-height: g.tabvw(29.7);
+    }
+    @include g.mq(pc) {
+        font-size: g.pcvw(20);
+        line-height: g.pcvw(29.7);
+    }
 }
 
 code {
     font-size: g.vw(16);
     line-height: g.vw(24);
     font-family: 'M+ 1m', sans-serif;
+    @include g.mq(tab) {
+        font-size: g.tabvw(16);
+        line-height: g.tabvw(24);
+    }
+    @include g.mq(pc) {
+        font-size: g.pcvw(16);
+        line-height: g.pcvw(24);
+    }
 }

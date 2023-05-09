@@ -8,5 +8,17 @@
         height: g.vw(81);
         padding: g.vw(30);
         font-weight: 700;
+        @include g.mq(tab) {
+            margin: g.tabvw(60);
+            width: g.tabvw(429);
+            height: g.tabvw(104);
+            padding: g.tabvw(40);
+        }
+        @include g.mq(pc) {
+            margin: g.pcvw(60) g.pcvw(100);
+            width: g.pcvw(429);
+            height: g.pcvw(104);
+            padding: g.pcvw(40);
+        }
     }
 }
