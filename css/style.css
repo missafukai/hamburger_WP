@@ -887,7 +887,7 @@ code {
   }
 }
 
-.p-jumbotron {
+.p-jumbotron, .--page.p-jumbotron {
   width: 100%;
   height: 76vw;
   background-repeat: none;
@@ -896,13 +896,13 @@ code {
   position: relative;
 }
 @media screen and (min-width: 600px) {
-  .p-jumbotron {
+  .p-jumbotron, .--page.p-jumbotron {
     height: 34.1726618705vw;
     background-size: cover;
   }
 }
 @media screen and (min-width: 1025px) {
-  .p-jumbotron {
+  .p-jumbotron, .--page.p-jumbotron {
     height: 27.6041666667vw;
   }
 }
@@ -1008,29 +1008,29 @@ code {
   }
 }
 
-.--single.p-jumbotron {
+.--single.p-jumbotron, .p-jumbotron.--page {
   background-image: url("../../img/cheese-burger.png");
   height: 60vw;
   background-size: 188%;
   background-position: 50% 45%;
 }
 @media screen and (min-width: 600px) {
-  .--single.p-jumbotron {
+  .--single.p-jumbotron, .p-jumbotron.--page {
     background-position: 50% 65%;
   }
 }
 @media screen and (min-width: 1025px) {
-  .--single.p-jumbotron {
+  .--single.p-jumbotron, .p-jumbotron.--page {
     height: 26.0416666667vw;
     background-size: 100%;
   }
 }
-.--single.p-jumbotron__title {
+.--single.p-jumbotron__title, .p-jumbotron__title.--page.p-jumbotron {
   top: 24.8vw;
   left: 6.9333333333vw;
 }
 @media screen and (min-width: 600px) {
-  .--single.p-jumbotron__title {
+  .--single.p-jumbotron__title, .p-jumbotron__title.--page.p-jumbotron {
     font-size: 7.1942446043vw;
     line-height: 10.6834532374vw;
     top: 25.5395683453vw;
@@ -1038,11 +1038,40 @@ code {
   }
 }
 @media screen and (min-width: 1025px) {
-  .--single.p-jumbotron__title {
+  .--single.p-jumbotron__title, .p-jumbotron__title.--page.p-jumbotron {
     font-size: 3.125vw;
     line-height: 4.640625vw;
     top: 11.09375vw;
     left: 3.6458333333vw;
+  }
+}
+
+.--page.p-jumbotron {
+  background-image: url("../../img/store.png");
+}
+@media screen and (min-width: 600px) {
+  .--page.p-jumbotron {
+    background-position: 50% 48%;
+  }
+}
+.--page.p-jumbotron__title {
+  top: 26.1333333333vw;
+  left: 11.4666666667vw;
+}
+@media screen and (min-width: 600px) {
+  .--page.p-jumbotron__title {
+    font-size: 7.1942446043vw;
+    line-height: 10.6834532374vw;
+    top: 25.5395683453vw;
+    left: 9.5923261391vw;
+  }
+}
+@media screen and (min-width: 1025px) {
+  .--page.p-jumbotron__title {
+    font-size: 3.125vw;
+    line-height: 4.640625vw;
+    top: 10.9375vw;
+    left: 3.90625vw;
   }
 }
 
@@ -1657,52 +1686,52 @@ code {
   }
 }
 
-.p-article {
+.p-article, .--page.p-article {
   margin: 8.5333333333vw 5.8666666667vw 0 5.8666666667vw;
   text-align: left;
 }
 @media screen and (min-width: 600px) {
-  .p-article {
+  .p-article, .--page.p-article {
     margin: 4.6762589928vw 4.1966426859vw 4.4364508393vw 5.035971223vw;
   }
 }
 @media screen and (min-width: 1025px) {
-  .p-article {
+  .p-article, .--page.p-article {
     margin: 3.2291666667vw 5.2083333333vw 3.6458333333vw 5.2083333333vw;
   }
 }
-.p-article__title {
+.p-article__title, .--page.p-article__title {
   margin-bottom: 6.6666666667vw;
   color: #3C2A10;
 }
 @media screen and (min-width: 600px) {
-  .p-article__title {
+  .p-article__title, .--page.p-article__title {
     margin-bottom: 2.3980815348vw;
   }
 }
 @media screen and (min-width: 1025px) {
-  .p-article__title {
+  .p-article__title, .--page.p-article__title {
     margin-bottom: 1.0416666667vw;
   }
 }
 
 @media screen and (min-width: 600px) {
-  .--single.p-article {
+  .--single.p-article, .p-article.--page {
     margin: 7.1942446043vw;
   }
 }
 @media screen and (min-width: 1025px) {
-  .--single.p-article {
+  .--single.p-article, .p-article.--page {
     margin: 3.2291666667vw 5.2083333333vw 3.6458333333vw 5.2083333333vw;
   }
 }
 @media screen and (min-width: 600px) {
-  .--single.p-article__title {
+  .--single.p-article__title, .p-article__title.--page {
     margin-bottom: 6.5947242206vw;
   }
 }
 @media screen and (min-width: 1025px) {
-  .--single.p-article__title {
+  .--single.p-article__title, .p-article__title.--page {
     margin-bottom: 2.96875vw;
   }
 }
@@ -2202,7 +2231,7 @@ code {
   }
 }
 
-.p-button.--single {
+.p-button.--single, .p-button.--page {
   display: block;
   margin: 8vw auto;
   width: 89.3333333333vw;
@@ -2211,7 +2240,7 @@ code {
   font-weight: 700;
 }
 @media screen and (min-width: 600px) {
-  .p-button.--single {
+  .p-button.--single, .p-button.--page {
     margin: 7.1942446043vw;
     width: 51.4388489209vw;
     height: 12.4700239808vw;
@@ -2219,7 +2248,7 @@ code {
   }
 }
 @media screen and (min-width: 1025px) {
-  .p-button.--single {
+  .p-button.--single, .p-button.--page {
     margin: 3.125vw 5.2083333333vw;
     width: 22.34375vw;
     height: 5.4166666667vw;

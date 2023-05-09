@@ -133,3 +133,28 @@
         }
     }
 }
+
+//pageページ限定のCSS（singleと同じ、微調整）
+.--page.p-jumbotron {
+    @extend .--single, .p-jumbotron;
+    background-image: url("../../img/store.png");
+    @include g.mq(tab) {
+        background-position: 50% 48%;
+    }
+    &__title {
+        top: g.vw(98);
+        left: g.vw(43);
+        @include g.mq(tab) {
+            font-size: g.tabvw(60);
+            line-height: g.tabvw(89.1);
+            top: g.tabvw(213);
+            left: g.tabvw(80);
+        }
+        @include g.mq(pc) {
+            font-size: g.pcvw(60);
+            line-height: g.pcvw(89.1);
+            top: g.pcvw(210);
+            left: g.pcvw(75);
+        }
+    }
+}
