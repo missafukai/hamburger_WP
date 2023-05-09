@@ -22,3 +22,8 @@
         }
     }
 }
+
+//pageページ限定のcss（singleと一緒）
+.--page.p-button {
+    @extend .p-button, .--single;
+}

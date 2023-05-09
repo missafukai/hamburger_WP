@@ -38,3 +38,12 @@
         }
     }
 }
+
+//pageページ限定のcss（singleと一緒）
+.--page.p-article {
+    @extend .--single, .p-article;
+}
+
+.--page.p-article__title {
+    @extend .--single, .p-article__title;
+}
